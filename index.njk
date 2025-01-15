@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Environmental Bond Act 
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated  %}
+{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated, documents  %}
 
 
 {{ hero({
@@ -42,6 +42,41 @@ title: Environmental Bond Act
         text:"back to top" 
     })
 }}
+
+
+{{
+    documents({
+        headline:"Title of the documents area",
+        description:"A description of this section",
+        documents:[
+            {
+                link:"#",
+                text:"Document 1",
+                description:"a description of what this document or file is",
+                type: "document"
+            },
+            {
+                link:"#",
+                text:"Document 2",
+                description:"a description of what this document or file is",
+                type: "document"
+            },
+            {
+                link:"#",
+                text:"Document 3",
+                description:"a description of what this document or file is",
+                type: "document"
+            },
+            {
+                link:"#",
+                text:"Document 4",
+                description:"a description of what this document or file is",
+                type: "document"
+            }
+        ]
+    })
+}}
+
 
 {{
     accordion({

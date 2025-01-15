@@ -1,0 +1,33 @@
+<section class="nysds-documents">
+    {% if params.headline %}
+        <h2 class="nysds-documents-headline">{{params.headline}}</h2>
+    {% endif %}
+    {% if params.description %}
+        <p class="nysds-documents-description">{{params.description}}</p>
+    {% endif %}
+        <div class="nysds-documents-container">
+            <ul class="nysds-documents-list">
+            {% for document in params.documents %}
+                <li>
+                    {% if document.type === "document" %}
+                    <span class="nysds-document-icon" aria-hidden="true"></span>
+                    <a class="nysds-document-link" href="{{document.link}}">{{document.text}} 
+                        <span class="nysds-document-download"> 
+                            <span class="nysds-document-download-icon" aria-hidden="true"></span>
+                            Download 
+                        </span>
+                    </a>
+                    {% elif document.type === 'flickr' %}
+                     <span class="nysds-flickr-icon" aria-hidden="true"></span>
+                    <a class="nysds-document-link" href="{{document.link}}">{{document.text}} 
+                        <span class="nysds-document-download"> 
+                            <span class="nysds-pillars-large-arrow" aria-hidden="true"></span>
+                            Flickr
+                        </span>
+                    </a>
+                    {%endif %}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+</section>
