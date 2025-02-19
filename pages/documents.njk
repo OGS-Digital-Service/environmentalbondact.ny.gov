@@ -1,26 +1,25 @@
 ---
-layout: render-layout.njk
-title: Funding Opportunities
-component: documents
+layout: layout.njk
+title: documents
 ---
-{% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated, documents  %}
+{% from '../_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, accordion, documents  %}
 
-<style>
-{% if component == "cards" %}{% include './_includes/card/_cards.css'  %} {% endif %}
-{% if component == "filter" %}{% include './_includes/filtercard/_filtercards.css'  %} {% endif %}
-{% if component == "button" %}{% include './_includes/button/_button.css'  %} {% endif %}
-{% if component == "global" %}{% include './_includes/global/_global.css'  %} {% endif %}
-{% if component == "unav" %}{% include './_includes/unav/_unav.css'  %} {% endif %}
-{% if component == "stats" %}{% include './_includes/stats/_stats.css'  %} {% endif %}
-{% if component == "footer" %}{% include './_includes/footer/_footer.css'  %} {% endif %}
-{% if component == "highlight" %}{% include './_includes/highlight/_highlight.css'  %}  {% endif %}
-{% if component == "hero" %}{% include './_includes/hero/_hero.css'  %} {% endif %}
-{% if component == "category" %}{% include './_includes/category/_category.css'  %} {% endif %}
-{% if component == "accordion" %}{% include './_includes/accordion/_accordion.css'  %} {% endif %}
-{% if component == "backtop" %}{% include './_includes/backtop/_backtop.css'  %} {% endif %}
-{% if component == "stay" %}{% include './_includes/stayupdated/_stayupdated.css'  %} {% endif %}
-{% if component == "documents" %}{% include './_includes/documents/_documents.css'  %} {% endif %}
-</style>
+{{
+    filtercard({
+        heading:"Read the Act",
+        archive:false,
+        cards:[
+            {
+                agency:"Legislation",
+                title:"Read the Clean Water, Clean Air and Green Jobs Environmental Bond Act of 2022 ",
+                link:"https://www.nysenate.gov/legislation/laws/ENV/A58",
+                description:"On November 8, 2022, New Yorkers overwhelmingly approved a ballot proposition to make $4.2 billion available for environmental and community projects. State agencies, local governments, and partners can access funding to protect water quality, help communities adapt to climate change, improve resiliency and create green jobs.",
+                date:"" 
+            }
+            
+        ]
+    })
+}}
 
 
 {{
