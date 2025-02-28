@@ -10,13 +10,21 @@
                 </a>
                 </div>
                 <div class="card-content">
+                    
                     <h4 class="card-title">
                         <a class="card-link" href="{{card.link}}">{{card.title}}</a>
                     </h4>
                     {% if card.content %}
-                    <p class="card-description">{{card.content}}</p>
+                    <p class="card-description">
+                        {{card.content}}
+                        </p>
+                        
                     {% endif %}
+                    {% if card.deadline %}
+                        <div class="card-deadline"> <strong>Apply by:</strong> {{card.deadline}} </div>
+                {% endif %}
                 </div>
+                
             </div>
         {% endfor %}
         </div>
