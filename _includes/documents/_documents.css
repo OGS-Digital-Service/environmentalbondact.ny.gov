@@ -60,6 +60,10 @@
     color:#154973;
 }
 
+.nysds-document-link-text {
+    padding-right: 35px;
+}
+
 .nysds-document-download {
     margin-left: auto;
     background: #ededed;

@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: filter
+component: documents
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated, documents  %}
 
@@ -22,262 +22,89 @@ component: filter
 {% if component == "documents" %}{% include './_includes/documents/_documents.css'  %} {% endif %}
 </style>
 
+
 {{
-    filtercard({
-        heading:"Recent News",
-        archive: false,
-        cards:[
+    documents({
+        headline:"Annual Reports",
+        description:"",
+        documents:[
             {
-                title:"Additional Actions to Accelerate Water Quality Improvements and Combat Harmful Algal Blooms in the Finger Lakes Watershed Area",
-                agency:"Governor",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-additional-actions-accelerate-water-quality-improvements-and-combat",
-                date:"May 21, 2025"
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CWCAGJ-Environmental-Bond-Act-FY-2024-25-Annual-Report.pdf",
+                text:"Environmental Bond Act Annual Report FY 2024-2025 ",
+                type:"document"
             },
             {
-                title:"DEC Announces $22 Million in Climate Smart Communities Grants Now Available for Municipalities",
-                agency:"Department of Environmental Conservation (DEC)",
-                link:"https://dec.ny.gov/news/press-releases/2025/5/dec-announces-22-million-in-climate-smart-communities-grants-now-available-for-municipalities",
-                date:"May 20, 2025"
-            },
-            {
-                title:"On Earth Day, Governor Hochul Announces $60 Million in Environmental Bond Act Funding for Green Resiliency Grants",
-                agency:"Governor",
-                link:"https://www.governor.ny.gov/news/earth-day-governor-hochul-announces-60-million-environmental-bond-act-funding-green-resiliency",
-                date:"April 22, 2025"
-            },
-            {
-                title:"Hudson River Valley Greenway Announces Award of $2.2 Million to Improve Resiliency of the Albany-Hudson Electric Trail",
-                agency:"Department of Environmental Conservation (DEC)",
-                link:"https://dec.ny.gov/news/press-releases/2025/4/during-earth-week-2025-the-hudson-river-valley-greenway-announces-award-of-22-million-in-environmental-bond-act-funds-to-improve-resiliency-of-the-albany-hudson-electric-trail",
-                date:"April 23, 2025"
-            },
-            {
-                title:"Unplug and Play: $20 Million in Funding for New Municipal Parks and Recreation Grant Program  ",
-                agency:"Governor",
-                link:"https://www.governor.ny.gov/news/unplug-and-play-governor-hochul-announces-20-million-funding-new-municipal-parks-and",
-                date:"March 13, 2025"
-            },
-            {
-                title:"Governor Hochul Announces $80 Million in Clean Water, Clean Air and Green Jobs Environmental Bond Act Funds to Support Resiliency Initiatives  ",
-                agency:"Governor",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-80-million-clean-water-clean-air-and-green-jobs-environmental-bond",
-                date:"February 26, 2025"
-            },
-            {
-                title:"Governor Hochul Announces $150 Million Investments in Bond Act Funding to SUNY and CUNY Campuses",
-                agency:"Governor",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-150-million-investments-clean-water-clean-air-and-green-jobs",
-                date:"February 12, 2025"
-            },
-            {
-                title:"Governor Hochul Announces Launch of New 25 Million Trees Initiative ‘Tree Tracker’ ",
-                agency:"Governor",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-launch-new-25-million-trees-initiative-tree-tracker",
-                date:"February 5, 2025"
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CWCAGJ-Environmental-Bond-Act-FY-2023-24-Annual-Report.pdf",
+                text:"Environmental Bond Act Annual Report FY 2023-2024 ",
+                type:"document"
             }
-            
-            
-        ]
+    ]
+    })
+}}
+
+{{
+    documents({
+        headline:"Disadvantaged Communities Accounting Guidance",
+        description:"",
+        documents:[
+            {
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/Guidelines%20and%20Methodology%20for%20DAC%20Accounting.pdf",
+                text:"Guidelines and Methodology for Eligibility and Accounting of Direct Benefits to Disadvantaged Communities in Clean Water, Clean Air and Green Jobs Environmental Bond Act of 2022 Spending",
+                type:"document"
+            }
+    ]
+    })
+}}
+
+{{
+    documents({
+        headline:"Project Sign Specifications ",
+        description:"",
+        documents:[
+            {
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/BondActSign-UsageSpecs.pdf",
+                text:"Permanent Project Sign Specifications",
+                type:"document"
+            }
+    ]
     })
 }}
 
 
+{{
+    documents({
+        headline:"Project Sign Templates ",
+        description:"",
+        documents:[
+            {
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/BondActSign-48x24-MULTI AGENCY_final.mem.pdf",
+                text:"Multi Agency 48x24 Project Sign Template",
+                type:"document"
+            },
+            {
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/BondActSign-48x24-SINGLE%20AGENCY_final.mem.pdf",
+                text:"Single Agency Funded 48x24 Project Sign Template",
+                type:"document"
+            }
+    ]
+    })
+}}
 
 {{
-    filtercard({
-        heading:"Archive News",
-        archive: true,
-        cards:[
+    documents({
+        headline:"Logos ",
+        description:"",
+        documents:[
             {
-                agency: "Department of Environmental Conservation (DEC)",
-                title:"DEC releases first Clean Water, Clean Air and Green Environmental Bond Act Annual Report",
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CWCAGJ-Environmental-Bond-Act-FY-2023-24-Annual-Report.pdf",
-                date: "December 1, 2024"
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CleanWaterCleanAirandGreenJobsEnvironmentalBondAct_Lockup_PRIMARY (1).jpg",
+                text:"CWCAGJ Environmental Bond Act logo with background",
+                type:"document"
             },
             {
-                agency: "Governor",
-                title:"$60 Million Awarded to Transformational Green Infrastructure Projects ",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-60-million-awarded-transformational-green-infrastructure-projects",
-                date: "October 16, 2024"
-            },
-            {
-                agency: "Department of Environmental Conservation (DEC)",
-                title:"DEC Releases Environmental Bond Act Draft Guidelines for Food Security and Refrigeration Grant Program",
-                link:"https://dec.ny.gov/news/press-releases/2024/6/dec-releases-environmental-bond-act-draft-guidelines-for-food-security-and-refrigeration-grant-program",
-                date: "June 26, 2024"
-            },
-            {
-                agency: "Department of Environmental Conservation (DEC)",
-                title:"DEC Releases Environmental Bond Act Draft Guidelines for Disadvantaged Community Investment Eligibility and Accounting",
-                link:"https://dec.ny.gov/news/press-releases/2024/5/dec-releases-environmental-bond-act-draft-guidelines-for-disadvantaged-community-investment-eligibility-and-accounting",
-                date: "May 22, 2024"
-            },
-            {
-                agency: "Governor",
-                title:"Governor Hochul Announces Nearly $300 Million Investment in Climate Resiliency During Major Address at The Vatican",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-nearly-300-million-investment-climate-resiliency-during-major",
-                date: "May 16, 2024"
-            },
-            {
-                agency: "Governor",
-                title:"During Earth Week, Governor Hochul Announces $60 Million for New Green Resiliency Grant Program ",
-                link:"https://www.governor.ny.gov/news/during-earth-week-governor-hochul-announces-60-million-new-green-resiliency-grant-program",
-                date: "Apr 23, 2024"
-            },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"DEC Releases for Public Review and Comment Draft Eligibility Guidelines for Water Quality Improvement Project Program Grants for Municipal Stormwater Projects",
-                link:"https://dec.ny.gov/news/press-releases/2024/3/dec-releases-for-public-review-and-comment-draft-eligibility-guidelines-for-water-quality-improvement-project-program-grants-for-municipal-stormwater-projects",
-                date:"Mar 22, 2024" 
-            },
-            {
-                agency:"Environmental Facilities Corporation (EFC)",
-                title:"EFC Announces Draft Eligibility Guidelines to Launch New Green Resiliency Grant Program",
-                link:"https://efc.ny.gov/news/efc-announces-draft-eligibility-guidelines-launch-new-green-resiliency-grant-program",
-                date:"Mar 21, 2024" 
-            },
-            {
-                agency:"Department of Agriculture and Markets",
-                title:"Department of Agriculture and Markets Advances Bond Act Funded Programs to Support Farmers and Protect New York Watersheds",
-                link:"https://agriculture.ny.gov/news/department-agriculture-and-markets-advances-bond-act-funded-programs-support-farmers-and",
-                date:"Mar 14, 2024" 
-            },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"DEC Releases Environmental Bond Act Draft Eligibility Guidelines for Climate Smart Communities Grant Program Projects",
-                link:"https://dec.ny.gov/news/press-releases/2024/3/dec-releases-environmental-bond-act-draft-eligibility-guidelines-for-climate-smart-communities-grant-program-projects",
-                date:"Mar 13, 2024" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces Funding Now Available to Support Electric School Bus Charging Infrastructure
-published",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-funding-now-available-support-electric-school-bus-charging",
-                date:"Mar 05, 2024" 
-            },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"DEC Releases Environmental Bond Act Draft Eligibility Guidelines to Support Planting 25 Million Trees by 2033
-published",
-                link:"https://dec.ny.gov/news/press-releases/2024/2/dec-releases-environmental-bond-act-draft-eligibility-guidelines-to-support-planting-25-million-trees-by-2033",
-                date:"Feb 13, 2024" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces $100 Million in Environmental Bond Act Funding Now Available for Clean Green Schools",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-100-million-environmental-bond-act-funding-now-available-clean-green",
-                date:"Jan 23, 2024" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces $13.1 Million to Support Construction of the Adirondack Rail Trail",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-131-million-support-construction-adirondack-rail-trail",
-                date:"Jan 23, 2024" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces Investments in Long Island Resiliency Projects to Protect Communities from Extreme Weather published",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-investments-long-island-resiliency-projects-protect-communities",
-                date:"Jan 22, 2024" 
-            },
-            {
-                agency:"NYSERDA",
-                title:"Draft Eligibility Guidelines on Clean Green Schools Environmental Bond Act Now Available For Public Comment ",
-                link:"https://www.nyserda.ny.gov/About/Newsroom/2023-Announcements/2023-11-8-NYSERDA-Announces-Release-of-Eligibility-Guidelines-to-Advance-Clean-Green-Schools",
-                date:"Nov 08, 2023" 
-            },
-            {
-                agency:"NYSERDA",
-                title:"NYSERDA Responds to Public Comments on the Draft Eligibility Guidelines for the Public School Bus Electrification Program ",
-                link:"https://www.ny.gov/sites/default/files/2023-11/NYSERDA_Response_EBA_ESB_comments.pdf",
-                date:"October 01, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces $100 Million Available for Zero-Emission School Buses",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-100-million-available-zero-emission-school-buses",
-                date:"Sep 28, 2023" 
-            },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"New York State Extends Deadline for Clean Water, Clean Air and Green Jobs Environmental Bond Act Project Ideas Survey ",
-                link:"https://dec.ny.gov/news/press-releases/2023/9/new-york-state-extends-deadline-for-clean-water-clean-air-and-green-jobs",
-                date:"Sep 13, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Celebrates Conclusion of Clean Water, Clean Air and Green Jobs Environmental Bond Act Listening Tour ",
-                link:"https://www.governor.ny.gov/news/governor-hochul-celebrates-conclusion-clean-water-clean-air-and-green-jobs-environmental-bond",
-                date:"Aug 25, 2023" 
-            },
-            {
-                agency:"Homes and Community Renewal",
-                title:"Governor Hochul Pledges Additional $3 Million Emergency Assistance for Homeowners in Hudson Valley, North Country, and Finger Lakes Regions Impacted by Recent Flooding ",
-                link:"https://hcr.ny.gov/news/governor-hochul-pledges-additional-3-million-emergency-assistance-homeowners-hudson-valley",
-                date:"Aug 09, 2023" 
-            },
-            {
-                agency:"NYSERDA",
-                title:"NYSERDA Announces Release of Draft Eligibility Guidelines to Advance Zero-Emission School Bus Environmental Bond Act Investments ",
-                link:"https://www.nyserda.ny.gov/About/Newsroom/2023-Announcements/2023-08-03-Draft-Eligibility-Guidelines-Announced-To-Advance-Zero-Emission-School-Bus-Envir",
-                date:"Aug 03, 2023" 
-            },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"New York State Announces Rescheduled North Country Bond Act Listening Session Aug. 11 at Harrietstown Town Hall ",
-                link:"https://dec.ny.gov/news/press-releases/2023/8/new-york-state-announces-rescheduled-north-country-bond-act-listening-session-aug-11-at-harrietstown-town-hall",
-                date:"Aug 01, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"After Devastating Flooding, Governor Hochul Extends Application Deadline for More Than $500 Million in Resiliency-Related Grants ",
-                link:"https://www.governor.ny.gov/news/after-devastating-flooding-governor-hochul-extends-application-deadline-more-500-million",
-                date:"Jul 17, 2023" 
-            },
-            {
-                agency:"Department of Environmental Conservation (DEC)",
-                title:"New York State Announces Postponement of North Country Bond Act Listening Session ",
-                link:"https://dec.ny.gov/news/press-releases/2023/7/new-york-state-announces-postponement-of-north-country-bond-act-listening-session",
-                date:"Jul 13, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Kicks Off Clean Water, Clean Air and Green Jobs Environmental Bond Act Listening Tour ",
-                link:"https://www.governor.ny.gov/news/governor-hochul-kicks-clean-water-clean-air-and-green-jobs-environmental-bond-act-listening",
-                date:"May 30, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces Five Additional Listening Sessions to Advance Clean Water, Clean Air, and Green Jobs Environmental Bond Act ",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-five-additional-listening-sessions-advance-clean-water-clean-air-0",
-                date:"May 23, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Launches Statewide Listening Tour to Advance Clean Water, Clean Air and Green Jobs Environmental Bond Act ",
-                link:"https://www.governor.ny.gov/news/governor-hochul-launches-statewide-listening-tour-advance-clean-water-clean-air-and-green-jobs",
-                date:"Apr 17, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces $425 Million in Grants for Critical Water Infrastructure Projects Statewide ",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-425-million-grants-critical-water-infrastructure-projects-statewide",
-                date:"Apr 17, 2023" 
-            },
-            {
-                agency:"Environmental Facilities Corporation (EFC)",
-                title:"EFC Announces Draft Eligibility Guidelines to Advance Environmental Bond Act Investments ",
-                link:"https://efc.ny.gov/news/efc-announces-draft-eligibility-guidelines-advance-environmental-bond-act-investments",
-                date:"Mar 15, 2023" 
-            },
-            {
-                agency:"Governor",
-                title:"Governor Hochul Announces $600 Million In Grants Available for Water Infrastructure and Resiliency Projects Statewide, Outlines New Resilient New York Agenda ",
-                link:"https://www.governor.ny.gov/news/governor-hochul-announces-600-million-grants-available-water-infrastructure-and-resiliency",
-                date:"Sep 21, 2021" 
+                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CleanWaterCleanAirandGreenJobsEnvironmentalBondAct_Lockup_PRIMARY%20(1).png",
+                text:"CWCAGJ Environmental Bond Act logo without background",
+                type:"document"
             }
-            
-            
-        ]
+    ]
     })
 }}
