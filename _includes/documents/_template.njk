@@ -11,7 +11,10 @@
                 <li>
                     {% if document.type === "document" %}
                     <span class="nysds-document-icon" aria-hidden="true"></span>
-                    <a class="nysds-document-link" href="{{document.link}}">{{document.text}} 
+                    <a class="nysds-document-link" href="{{document.link}}">
+                        <span class="nysds-document-link-text">
+                            {{document.text}} 
+                        </span>
                         <span class="nysds-document-download"> 
                             <span class="nysds-document-download-icon" aria-hidden="true"></span>
                             Download 
