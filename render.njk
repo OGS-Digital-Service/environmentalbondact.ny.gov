@@ -1,7 +1,7 @@
 ---
 layout: render-layout.njk
 title: Funding Opportunities
-component: documents
+component: cards
 ---
 {% from './_includes/_components.njk' import filtercard, card, button, stats, highlight, hero, category, accordion, backtop, stayupdated, documents  %}
 
@@ -22,89 +22,62 @@ component: documents
 {% if component == "documents" %}{% include './_includes/documents/_documents.css'  %} {% endif %}
 </style>
 
-
 {{
-    documents({
-        headline:"Annual Reports",
-        description:"",
-        documents:[
+    card({
+        heading:"Featured",
+        intro:"",
+        cards:[
             {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CWCAGJ-Environmental-Bond-Act-FY-2024-25-Annual-Report.pdf",
-                text:"Environmental Bond Act Annual Report FY 2024-2025 ",
-                type:"document"
+                title:"$43 Million in Bond Act Funding for Harlem River Greenway",
+                content:"$43 million in Bond Act funds to advance construction of major elements of the Manhattan Greenway’s Harlem River.",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-43-million-clean-water-clean-air-and-green-jobs-environmental-bond",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_mobile/public/2025-08/harlem-river-walkway-hero_0.jpg?h=f1cac116&itok=nAZqr7Wk",
+                imagealt:""
             },
             {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CWCAGJ-Environmental-Bond-Act-FY-2023-24-Annual-Report.pdf",
-                text:"Environmental Bond Act Annual Report FY 2023-2024 ",
-                type:"document"
-            }
-    ]
-    })
-}}
-
-{{
-    documents({
-        headline:"Disadvantaged Communities Accounting Guidance",
-        description:"",
-        documents:[
-            {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/Guidelines%20and%20Methodology%20for%20DAC%20Accounting.pdf",
-                text:"Guidelines and Methodology for Eligibility and Accounting of Direct Benefits to Disadvantaged Communities in Clean Water, Clean Air and Green Jobs Environmental Bond Act of 2022 Spending",
-                type:"document"
-            }
-    ]
-    })
-}}
-
-{{
-    documents({
-        headline:"Project Sign Specifications ",
-        description:"",
-        documents:[
-            {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/BondActSign-UsageSpecs.pdf",
-                text:"Permanent Project Sign Specifications",
-                type:"document"
-            }
-    ]
-    })
-}}
-
-
-{{
-    documents({
-        headline:"Project Sign Templates ",
-        description:"",
-        documents:[
-            {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/BondActSign-48x24-MULTI AGENCY_final.mem.pdf",
-                text:"Multi Agency 48x24 Project Sign Template",
-                type:"document"
+                title:"Additional $200 Million in Bond Act Funding Now Available for Zero-Emission School Buses",
+                content:"$200 million in Environmental Bond Act funding is now available for zero-emission school buses.",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-additional-200-million-environmental-bond-act-funding-now-0",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/2023-09/electric-school-buses_0.jpg?h=ec45e355&itok=3x1uR_d_",
+                imagealt:"10 to 12 school buses in a line"
+            },
+             {
+                title:"$10 Million to Advance Ralph C. Wilson, Jr. Centennial Park Coastal Shoreline Project ",
+                content:"$10 million in Bond Act funds to support the Ralph C. Wilson, Jr. Centennial Park’s Coastal Shoreline Project in the City of Buffalo.",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-10-million-advance-ralph-c-wilson-jr-centennial-park-coastal",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/2025-07/RalphWilsonParkhero.gif?h=0d1e402d&itok=0cEWyK9Y",
+                imagealt:"governor hochul and others holding a large check at the coastal shoreline project"
+            },
+             {
+                title:"Groundbreaking for Swimming Facility and Additional New Developments at Sojourner Truth State Park ",
+                content:"Bond Act-Funded Project Supports Governor’s NY SWIMS Initiative with Over 400-Person Swimming Facility in City of Kingston, First New Swimming Facility in the State Parks System in 20 Years.",
+                link:"https://www.governor.ny.gov/news/unplug-and-play-governor-hochul-announces-groundbreaking-swimming-facility-and-additional-new",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/2025-07/sojourner-truth-state-park-rendering1280.jpg?h=b5f6a62e&itok=_KwE2pwt",
+                imagealt:"painted rendering of what the new swimming facility will look like."
+            },
+             {
+                title:"$21 Million in Funding for Flood Protection Projects in the Southern Tier  ",
+                content:"$21 million provided through the ‘Restoration and Flood Risk’ category of the Bond Act to support projects in the Southern Tier to bolster the resilience of existing infrastructure to help protect communities from flooding.",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-21-million-funding-flood-protection-projects-southern-tier",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/thumbnails/image/rain_flooding_weather_hero.jpg?h=b5f6a62e&itok=qGvW-o_g",
+                imagealt:"raindrops falling into water"
             },
             {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/BondActSign-48x24-SINGLE%20AGENCY_final.mem.pdf",
-                text:"Single Agency Funded 48x24 Project Sign Template",
-                type:"document"
-            }
-    ]
-    })
-}}
-
-{{
-    documents({
-        headline:"Logos ",
-        description:"",
-        documents:[
-            {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CleanWaterCleanAirandGreenJobsEnvironmentalBondAct_Lockup_PRIMARY (1).jpg",
-                text:"CWCAGJ Environmental Bond Act logo with background",
-                type:"document"
+                title:"$21 Million in Bond Act Funding to Improve Resiliency in Westchester County ",
+                content:"Funding through the ‘Restoration and Flood Risk’ category of the Bond Act will support the replacement of two Westchester County-owned bridges and restore portions of the stream to a more natural, stable condition",
+                link:"https://www.governor.ny.gov/news/governor-hochul-announces-21-million-clean-water-clean-air-and-green-jobs-environmental-bond",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/thumbnails/image/New_Rochelle.jpg?h=b5f6a62e&itok=-YM_o-Un",
+                imagealt:"buildings overlooking the water with trees in the mid ground"
             },
             {
-                link:"https://extapps.dec.ny.gov/fs/programs/BondActNYS/CleanWaterCleanAirandGreenJobsEnvironmentalBondAct_Lockup_PRIMARY%20(1).png",
-                text:"CWCAGJ Environmental Bond Act logo without background",
-                type:"document"
+                title:"Two Environmental and Recreational Milestones in the Catskill Forest Preserve ",
+                content:"$4.2 million in funding for the acquisition of 900 acres to protect critical Catskill Forest Preserve habitat and water quality provided by the Bond Act.",
+                link:"https://www.governor.ny.gov/news/get-offline-get-outside-governor-hochul-announces-two-environmental-and-recreational",
+                image:"https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/thumbnails/image/Catskill_Road_Fall_Transportation_Highway_hero.jpg?h=a68aca2f&itok=0nwkGZ_Q",
+                imagealt:"white van driving down a road with fall foilage in the background"
             }
-    ]
+            
+            
+        ]
     })
 }}
